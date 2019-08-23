@@ -1,6 +1,6 @@
 with source as (
 
-    select * from raw.public.listings
+    select * from {{ source('public', 'listings') }}
 
 ),
 
