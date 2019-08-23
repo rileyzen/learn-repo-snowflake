@@ -1,5 +1,9 @@
+version: 2
+
 sources:
   - name: public
+    database: raw
+
     tables:
       - name: listings
       - name: reviews
