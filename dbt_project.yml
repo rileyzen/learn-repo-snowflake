@@ -14,4 +14,15 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
 
+quoting:
+  database: false
+  identifier: false
+  schema: false
+
+on-run-end:
+  - "{{ grant_select_on_schemas(schemas, 'reporter') }}"
+  - "{{ grant_select_on_schemas(schemas, 'transformer') }}"
+
 models:
+  transient: true
+  learn_project_snowflake:
