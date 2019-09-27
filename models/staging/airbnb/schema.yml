@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: stg_airbnb_listings
+    description: airbnb listings
     columns:
       - name: listing_id
         tests:
@@ -10,6 +11,7 @@ models:
           - not_greater_than_100
 
   - name: stg_airbnb_reviews
+    description: airbnb listings
     columns:
       - name: review_id
         tests:
