@@ -8,9 +8,9 @@
 
 ---
 ### Data Tools Overview
-ELT Tool: [insert ELT docs link here]
-Data Warehouse: [insert warehouse docs link here]
-BI Tool: [insert BI docs link here]
+- ELT Tool: [insert ELT docs link here]
+- Data Warehouse: [insert warehouse docs link here]
+- BI Tool: [insert BI docs link here]
 
 ---
 ### Formatting/Documenting
@@ -25,5 +25,13 @@ BI Tool: [insert BI docs link here]
 ---
 ### Manually Updated Data Sources
 - Some of the data sources we use for analysis need to be manually pushed to Stitch via Googlesheets (API Docs)
-    - [TABLE LINK HERE] - description of googlesheet and when it needs to updated
+    - [TABLE LINK HERE] - description of googlesheet and when it needs to updated.
     - [TABLE LINK II HERE] - description of googlesheet and when it needs to updated
+
+---
+
+### Contact
+- For dbt installation process, contact [NAME, EMAIL]
+- For permissions, contact [NAME, EMAIL]
+- For documentation questions, contact [NAME, EMAIL]
+- For BI tool questions, contact [NAME, EMAIL]
