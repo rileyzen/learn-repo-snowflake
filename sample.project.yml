@@ -1,0 +1,14 @@
+learn_project:
+  outputs:
+    dev:
+      type: Snowflake
+      threads: 16
+      account: kw27752
+      user: [username]
+      password: [password]
+      role: learner
+      database: analytics
+      warehouse: learning
+      schema: dbt_[user_name] # e.g. dbt_alice
+      client_session_keep_alive: False
+  target: dev

@@ -2,14 +2,15 @@ version: 2
 
 models:
   - name: stg_airbnb_listings
+    description: Listings for AirBnBs in Denver, CO
     columns:
       - name: listing_id
         tests:
           - not_null
           - unique
-          - not_greater_than_100
 
   - name: stg_airbnb_reviews
+    description: All reviews for AirBnBs in Denver, CO
     columns:
       - name: review_id
         tests:

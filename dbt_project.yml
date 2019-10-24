@@ -26,3 +26,5 @@ on-run-end:
 models:
   transient: true
   learn_project_snowflake:
+    marts:
+      materialized: table
