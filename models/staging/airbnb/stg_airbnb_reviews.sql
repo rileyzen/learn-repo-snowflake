@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ source('public', 'reviews') }}
+    select * from {{ source('airbnb', 'reviews') }}
 
 ),
 
@@ -9,7 +9,7 @@ renamed as (
     select
 
         id as review_id,
-        reviewer_id,
+        review,
         listing_id,
         reviewer_name,
         comments,

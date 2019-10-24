@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ source('public', 'listings') }}
+    select * from {{ source('airbnb', 'listings') }}
 
 ),
 
@@ -9,7 +9,7 @@ renamed as (
     select
 
         id as listing_id,
-        listing_url,
+        url,
 
 --listing info
         name,
@@ -53,15 +53,13 @@ renamed as (
         host_since,
         host_location,
         host_about,
-        host_response_time,
-        host_response_rate,
-        host_acceptance_rate,
-        host_is_superhost,
+        response_time,
+        response_rate,
+        acceptance_rate,
+        is_superhost,
         host_thumbnail_url,
         host_picture_url,
         host_neighbourhood,
-        host_listings_count,
-        host_total_listings_count,
         host_verifications,
         host_has_profile_pic,
         host_identity_verified,
@@ -82,20 +80,6 @@ renamed as (
         longitude,
         is_location_exact,
 
---reviews
-        number_of_reviews,
-        number_of_reviews_ltm,
-        first_review,
-        last_review,
-        review_scores_rating,
-        review_scores_accuracy,
-        review_scores_cleanliness,
-        review_scores_checkin,
-        review_scores_communication,
-        review_scores_location,
-        review_scores_value,
-        reviews_per_month,
-        
 --requirements
         requires_license,
         license,
@@ -105,14 +89,6 @@ renamed as (
         cancellation_policy,
         require_guest_profile_picture,
         require_guest_phone_verification,
-        minimum_nights,
-        maximum_nights,
-        minimum_minimum_nights,
-        maximum_minimum_nights,
-        minimum_maximum_nights,
-        maximum_maximum_nights,
-        minimum_nights_avg_ntm,
-        maximum_nights_avg_ntm,
 
 --pricing
         cleaning_fee,
