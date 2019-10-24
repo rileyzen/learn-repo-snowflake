@@ -8,7 +8,7 @@
 
 ---
 ### Data Tools Overview
-
+![Imgur](https://i.imgur.com/QhQchL9.png)
 - ELT Tool: [insert ELT docs link here]
 - Data Warehouse: [insert warehouse docs link here]
 - BI Tool: [insert BI docs link here]
