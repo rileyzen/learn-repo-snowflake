@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_airbnb_listings
+    description: Listings for AirBnBs in Denver, CO
+    columns:
+      - name: listing_id
+        description: Primary key for the listings table
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_airbnb_reviews
+    description: All reviews for AirBnBs in Denver, CO
+    columns:
+      - name: review_id
+        description: Primary key for the reviews table
+        tests:
+          - not_null
+          - unique

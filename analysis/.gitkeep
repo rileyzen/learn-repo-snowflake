@@ -1,0 +1,3 @@
+-- analysis folder. stores analyses that aren't models.
+-- still get access to all the dbt context/great jinja but isn't run as the model.
+-- same as effemeral model. extra little short cut
